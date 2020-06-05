@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">League of Legends Survey</h1>
+      <p id="description">
+        Let us know how we can improve our game environment.
+      </p>
+    </header>
+    <div class="container">
+      <form action="" id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            required
+            type="text"
+            id="name"
+            placeholder="Enter your summoner name"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            required
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group select">
+          <p class="question">Gender</p>
+          <label for="male">
+            <input type="radio" name="gender" id="male" value="male" />Male
+          </label>
+          <label for="female">
+            <input
+              type="radio"
+              name="gender"
+              id="female"
+              value="female"
+            />Female
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            placeholder="Age"
+            class="form-control"
+            min="5"
+            max="100"
+          />
+        </div>
+        <div class="form-group">
+          <p class="question">
+            On which server you are playing?
+          </p>
+          <select name="server" id="dropdown" class="form-control">
+            <option disabled selected class="darken">Select Server</option>
+            <option value="BR">Brazil</option>
+            <option value="EUNE">Europe Nordic & East</option>
+            <option value="EUW">Europe West</option>
+            <option value="LAN">Latin America (North)</option>
+            <option value="LAS">Latin America (South)</option>
+            <option value="NA">North America</option>
+            <option value="OCE">Oceania</option>
+            <option value="RU">Russia</option>
+            <option value="TR">Turkey</option>
+            <option value="JP">Japan</option>
+            <option value="KR">Republic of Korea</option>
+            <option value="GARENA">Garena</option>
+          </select>
+        </div>
+        <div class="form-group select">
+          <p class="question">How long you've been playing?</p>
+          <label
+            ><input type="radio" name="experience" value="0" />Less than a
+            year</label
+          >
+          <label
+            ><input type="radio" name="experience" value="1" />1 Year</label
+          >
+          <label
+            ><input type="radio" name="experience" value="2-3" />2 - 3
+            Years</label
+          >
+          <label
+            ><input type="radio" name="experience" value="4-5" />4 - 5
+            Years</label
+          >
+          <label
+            ><input type="radio" name="experience" value="6-7" />6 - 7
+            Years</label
+          >
+          <label
+            ><input type="radio" name="experience" value="8-9" />8 - 9
+            Years</label
+          >
+          <label
+            ><input type="radio" name="experience" value="10" />More than 10
+            Years</label
+          >
+        </div>
+        <div class="form-group">
+          <p class="question">
+            Which role suits you best?
+          </p>
+          <select name="roles" id="dropdown-role" class="form-control">
+            <option disabled selected>Select Role</option>
+            <option value="Support">Support</option>
+            <option value="Mid">Mid Lane</option>
+            <option value="Top">Top Lane</option>
+            <option value="Bot">Bottom Lane</option>
+            <option value="Jungle">Jungle</option>
+            <option value="Fill">Fill</option>
+          </select>
+        </div>
+        <div class="form-group select">
+          <p class="question">Which game mode do you like?</p>
+          <label
+            ><input type="checkbox" name="game-mode" value="TT" />Twisted
+            Treeline</label
+          >
+          <label
+            ><input type="checkbox" name="game-mode" value="TFT" />TeamFight
+            Tactics</label
+          >
+          <label
+            ><input type="checkbox" name="game-mode" value="SGM" />Special Game
+            Mode <span>(Nexus Blitz, Poro King, Doom Bolts Etc.)</span></label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="game-mode"
+              value="URF"
+            />URF/ARURF</label
+          >
+          <label
+            ><input type="checkbox" name="game-mode" value="ARAM" />ARAM</label
+          >
+          <label
+            ><input type="checkbox" name="game-mode" value="SR" />Summoner's
+            Rift</label
+          >
+        </div>
+        <div class="form-group select">
+          <p class="question">
+            What kind of toxicity have you experience after the game?
+          </p>
+          <label
+            ><input
+              type="radio"
+              name="toxicity"
+              value="Flaming, Cussing
+            Etc."
+            />Flaming, Cussing Etc.</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="toxicity"
+              value="Repeatedly friending
+            me"
+            />Repeatedly friending me</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="toxicity"
+              value="Sexual remarks or
+            preposition"
+            />Sexual remarks or preposition</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="toxicity"
+              value="Stalking me outside
+            of the game"
+            />Stalking me outside of the game</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="toxicity"
+              value="Sending me gifts I
+            did not ask for"
+            />Sending me gifts I did not ask for</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="toxicity"
+              value="I've never been
+            harassed"
+            />I've never been harassed</label
+          >
+        </div>
+        <div class="form-group">
+          <p class="question">
+            Any suggestion on how we can improve game environment.
+          </p>
+          <textarea
+            name="suggestion"
+            id="suggestion"
+            placeholder="Enter your suggestions. . ."
+          ></textarea>
+        </div>
+        <div class="form-group center-btn">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
