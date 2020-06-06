@@ -73,7 +73,6 @@ body {
 /* HEADER */
 #header {
   width: 100vw;
-  position: -webkit-fixed;
   position: fixed;
   top: 0;
   display: flex;
